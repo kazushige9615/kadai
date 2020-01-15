@@ -1,0 +1,30 @@
+<html>
+<head>
+<script>
+
+
+ 
+ </script>
+</html>
+
+<html>
+<head>
+<style>
+    boutton {
+        font-size: 50px
+    }
+</style>
+</head>
+<body>
+   <button id ="button">おみくじを引く</button>
+   <script>
+        const button = document.getElementById('button')
+        button.addEventListener('click',() =>{
+ fetch('https://4000-cf05f469-91f2-42ca-9183-80955c238604.ws-ap01.gitpod.io/')
+    .then(res => res.text())
+    .then(data => alert(data))
+
+        })
+    </script>
+</body>
+</html>
